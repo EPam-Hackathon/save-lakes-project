@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "LakeGuard",
+    "slug": "lake-monitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "lake-monitor",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a6b5c"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.lakeguard.monitor"
+    },
+    "android": {
+      "package": "com.lakeguard.monitor"
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow LakeGuard to access your photos to upload lake images for analysis."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
