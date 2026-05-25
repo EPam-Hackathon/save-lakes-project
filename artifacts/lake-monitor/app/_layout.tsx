@@ -37,7 +37,7 @@ function AuthGuard() {
 
     if (!user && inAuthGroup) {
       router.replace("/login");
-    } else if (user && (inLogin || inRegister || segments.length === 0)) {
+    } else if (user && (inLogin || inRegister)) {
       router.replace("/(tabs)");
     }
   }, [user, loading, segments, navState?.key]);
